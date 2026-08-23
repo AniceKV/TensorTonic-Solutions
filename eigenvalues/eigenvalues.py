@@ -5,7 +5,7 @@ def calculate_eigenvalues(matrix: list) -> np.ndarray:
     matrix=np.asarray(matrix,dtype=float)
     eigenvals,_=np.linalg.eig(matrix) 
 
-    return np.array(sorted(eigenvals.real))
+    return np.sort(eigenvals.real)
     
 
     
